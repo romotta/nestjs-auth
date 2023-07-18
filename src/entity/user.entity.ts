@@ -4,9 +4,7 @@ import {
   PrimaryGeneratedColumn,
   Column,
   Unique,
-  OneToMany,
 } from 'typeorm';
-import * as bcrypt from 'bcrypt';
 @Entity()
 @Unique(['email'])
 export class User extends BaseEntity {
